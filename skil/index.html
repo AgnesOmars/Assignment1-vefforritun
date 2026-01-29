@@ -61,6 +61,32 @@ Try CSS variables for theme colors.
     </div>
 
     <div>
+      <h2>Daily quote</h2>
+      <p>
+        “We are what we repeatedly do. Excellence, then, is not an act, but a
+        habit.”
+      </p>
+      <br />
+      <p>Will Durant</p>
+      <br />
+
+      <form>
+        <label for="category">Category</label>
+        <select name="category" id="category">
+          <option value="general">General</option>
+          <option value="productivity">Productivity</option>
+          <option value="study">Study</option>
+          <option value="creativity">Creativity</option>
+        </select>
+        <button type="button">New Quote</button>
+      </form>
+      <p>
+        The quote and category selector are static. JavaScript will later rotate
+        quotes and apply filters.
+      </p>
+    </div>
+
+    <div>
       <h2>Habit tracker</h2>
       <form>
         <label id="habit_checkbox1"><input type="checkbox" />2L of water</label
