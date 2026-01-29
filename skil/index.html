@@ -3,42 +3,81 @@
 <html lang="en">
   <head>
     <title>Study Dashboard</title>
-    <meta charset="UTF-8" >
+    <meta charset="UTF-8" />
     <!--meta name="description" content="..."/-->
     <meta
       name="author"
       content="Agnes Ómarsdóttir, Karen Nordquist Ragnarsdóttir, Rebekka Ósk Rögnvaldsdóttir"
-    >
+    />
   </head>
 
   <body>
     <h1>My Study Dashboard</h1>
     <div>
-      <img src="man_3728711.png" alt="profile picture" >
+      <img src="man_3728711.png" alt="profile picture" />
       <p>Agnes, Karen, Rebekka</p>
     </div>
 
     <div>
       <h2>Today's tasks</h2>
       <label>
-        <input type="checkbox" name="task1" checked > Review lecture notes </label
-      ><br>
+        <input type="checkbox" name="task1" checked /> Review lecture notes </label
+      ><br />
       <label>
-        <input type="checkbox" name="task2"> Work on dashboard layout </label
-      ><br>
+        <input type="checkbox" name="task2" /> Work on dashboard layout </label
+      ><br />
       <form>
         <label for="new-task">New task</label>
         <input
           type="text"
           id="new-task"
           placeholder="Write a new task here..."
-        >
+        />
         <button type="submit">Add task</button>
       </form>
       <p>
         The checkboxes, text field and “Add task” button show how the task list
         will work in assignment 2. For now they are part of the static HTML and
         CSS design only.
+      </p>
+    </div>
+    <div>
+      <h2>Quick Notes</h2>
+      <p>Notes</p>
+      <form>
+        <textarea id="notes_text" rows="5" cols="40">
+Lab on Friday: bring laptop
+Ask about responsive images.
+Try CSS variables for theme colors.
+            </textarea
+        >
+        <br />
+        <button>Save changes</button>
+      </form>
+      <p>
+        You can edit the text in the notes area. The "save changes" button is a
+        placeholder for assignment 2 when Javascript will save your notes.
+      </p>
+    </div>
+
+    <div>
+      <h2>Habit tracker</h2>
+      <form>
+        <label id="habit_checkbox1"><input type="checkbox" />2L of water</label
+        ><br />
+        <label id="habit_checkbox2"><input type="checkbox" />Exercised</label
+        ><br />
+        <label id="habit_checkbox3"><input type="checkbox" />Made my bed</label
+        ><br />
+        <br />
+        <button>Submit progress</button>
+        <button>Add new habit</button>
+      </form>
+      <p>
+        The submit progress would add the data to a database where all progress
+        would be collected. <br />
+        Add new habit would make the user be able to add other checkboxes for
+        habit tracking.
       </p>
     </div>
   </body>
