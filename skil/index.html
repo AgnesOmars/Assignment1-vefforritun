@@ -3,31 +3,43 @@
 <html lang="en">
   <head>
     <title>Study Dashboard</title>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8" >
     <!--meta name="description" content="..."/-->
     <meta
       name="author"
       content="Agnes Ómarsdóttir, Karen Nordquist Ragnarsdóttir, Rebekka Ósk Rögnvaldsdóttir"
-    />
+    >
   </head>
 
   <body>
     <h1>My Study Dashboard</h1>
-
-    <img src="man_3728711.png" alt="profile picture" />
-    <p>Agnes, Karen, Rebekka</p>
+    <div>
+      <img src="man_3728711.png" alt="profile picture" >
+      <p>Agnes, Karen, Rebekka</p>
+    </div>
 
     <div>
       <h2>Today's tasks</h2>
-      <label id="task1"
-        ><input type="checkbox" name="task1" value="task1" checked /> Review
-        lecture notes </label
-      ><br />
-      <label id="task2"
-        ><input type="checkbox" name="task2" value="task2" /> Work on dashboard
-        layout </label
-      ><br />
-      <textarea id="new task">  </textarea>
+      <label>
+        <input type="checkbox" name="task1" checked > Review lecture notes </label
+      ><br>
+      <label>
+        <input type="checkbox" name="task2"> Work on dashboard layout </label
+      ><br>
+      <form>
+        <label for="new-task">New task</label>
+        <input
+          type="text"
+          id="new-task"
+          placeholder="Write a new task here..."
+        >
+        <button type="submit">Add task</button>
+      </form>
+      <p>
+        The checkboxes, text field and “Add task” button show how the task list
+        will work in assignment 2. For now they are part of the static HTML and
+        CSS design only.
+      </p>
     </div>
   </body>
 </html>
