@@ -3,29 +3,33 @@
 <html lang="en">
   <head>
     <title>Study Dashboard</title>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <!--meta name="description" content="..."/-->
     <meta
       name="author"
       content="Agnes Ómarsdóttir, Karen Nordquist Ragnarsdóttir, Rebekka Ósk Rögnvaldsdóttir"
-    >
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
-    <header><h1>My Study Dashboard</h1></header>
-    <div>
-      <img src="man_3728711.png" alt="profile picture">
+    <div class = "top_section">
+      <header><h1>My Study Dashboard</h1></header>
+      <div class="profile_info">
+      <img src="man_3728711.png" alt="profile picture" />
       <p>Agnes, Karen, Rebekka</p>
+      </div>
     </div>
 
-    <div>
+    <div class ="box_section">
+    <div class = "task_section">
       <header><h1>Today´s tasks</h1></header>
       <label>
-        <input type="checkbox" name="task1" checked> Review lecture notes </label
-      ><br>
+        <input type="checkbox" name="task1" checked /> Review lecture notes </label
+      ><br />
       <label>
-        <input type="checkbox" name="task2"> Work on dashboard layout </label
-      ><br>
+        <input type="checkbox" name="task2" /> Work on dashboard layout </label
+      ><br />
       <form>
         <label for="new-task">New task</label>
         <input
@@ -41,17 +45,23 @@
         CSS design only.
       </p>
     </div>
-    <div>
+
+    <div class = "quick_notes_section">
       <header><h1>Quick Notes</h1></header>
       <p>Notes</p>
       <form>
-        <textarea id="notes_text" rows="5" cols="40" placeholder="Write your notes here...">
+        <textarea
+          id="notes_text"
+          rows="5"
+          cols="40"
+          placeholder="Write your notes here..."
+        >
 Lab on Friday: bring laptop.
 Ask about responsive images.
 Try CSS variables for theme colors.
             </textarea
         >
-        <br>
+        <br />
         <button>Save changes</button>
       </form>
       <p>
@@ -60,15 +70,15 @@ Try CSS variables for theme colors.
       </p>
     </div>
 
-    <div>
+    <div class = "quote_section">
       <header><h1>Daily quote</h1></header>
       <p>
         “We are what we repeatedly do. Excellence, then, is not an act, but a
         habit.”
       </p>
-      <br>
+      <br />
       <p>Will Durant</p>
-      <br>
+      <br />
 
       <form>
         <label for="category">Category</label>
@@ -86,30 +96,31 @@ Try CSS variables for theme colors.
       </p>
     </div>
 
-    <div>
+    <div class = "habit_tracker_section">
       <header><h1>Habit tracker</h1></header>
       <form>
-        <label id="habit_checkbox1"><input type="checkbox">2L of water</label
-        ><br>
-        <label id="habit_checkbox2"><input type="checkbox">Exercised</label
-        ><br>
-        <label id="habit_checkbox3"><input type="checkbox">Made my bed</label
-        ><br>
-        <br>
+        <label id="habit_checkbox1"><input type="checkbox" />2L of water</label
+        ><br />
+        <label id="habit_checkbox2"><input type="checkbox" />Exercised</label
+        ><br />
+        <label id="habit_checkbox3"><input type="checkbox" />Made my bed</label
+        ><br />
+        <br />
         <button>Submit progress</button>
         <button>Add new habit</button>
       </form>
       <p>
         The submit progress would add the data to a database where all progress
-        would be collected. <br>
+        would be collected. <br />
         Add new habit would make the user be able to add other checkboxes for
         habit tracking.
       </p>
     </div>
+  </div>
 
     <div>
       <p>This website requires at least 600px screen width.</p>
-      <img src="oops.jpg" alt="error_picture">
+      <img src="oops.jpg" alt="error_picture" />
     </div>
   </body>
 </html>

@@ -1,0 +1,44 @@
+body {
+  background-color: #1f2932;
+  color: #e5e7eb;
+}
+
+.top_section {
+  display: flex;
+  background-color: #020616;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profile_info img {
+  width: 50px;
+  height: 50px;
+  /* veit ekki með þetta fyrir neðan */
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.profile_info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.box_section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 8px;
+  gap: 20px;
+}
+
+.task_section,
+.quick_notes_section,
+.quote_section,
+.habit_tracker_section {
+  background-color: #020616;
+  padding: 20px;
+  border-radius: 8px;
+}
